@@ -9,20 +9,20 @@ Cleared Stopwords 
 Data Analysis and changing to unique terms.
 ### Spark NLP:
 We have used bellow NLP models for tweet clasification.
-DocumentAssembler:
+#### DocumentAssembler:
 an entry point to Spark NLP annotators.
 The raw data must be annotated. This is an unique transformer that takes care of it for us; the text is split into an array of sentences and a new column “sentences” in Document type is created, which annotators bellow can utilize later.
-Tokenizer:
+#### Tokenizer:
 Identifies tokens with tokenization open standards
 sentences” column is fed into Tokenizer() (AnnotatorModel) and each sentence is tokenized and a new column “token” in Token type is created. And so on.
-Embedding with BioBerT:
+#### Embedding with BioBerT:
 Used Bert Embeddings that maps tokens to vectors in a bidirectional way.
 BertEmbeddings pretrained "biobert_pubmed_base_cased" model is used for converting "sentence" and "token" into "embeddings".
-Ade biobert Clasiffier:
+#### Ade biobert Clasiffier:
  Classify if a sentence is ADE-related (True) or not (False).
 Used "classifierdl_ade_biobert" clasification model to classify an ade.
 It uses  "sentence" and  "sentence_embeddings" to classify an ade.
- Pretrained ADE Pipeline:
+#### Pretrained ADE Pipeline:
 A pipeline for Adverse Drug Events (ADE) with ner_ade_healthcare, and classifierdl_ade_biobert. It will extract ADE and DRUG clinical entities, and then assign ADE status to a text(True means ADE, False means not related to ADE). Also extracts relations between DRUG and ADE entities (1 means the adverse event and drug entities are related, 0 is not related).
 Used 'explain_clinical_doc_ade' clasification model to extract ADE and DRUG.
 
