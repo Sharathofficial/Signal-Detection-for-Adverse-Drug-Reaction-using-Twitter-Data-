@@ -1,6 +1,25 @@
 # Signal-Detection-for-Adverse-Drug-Reaction-using-Twitter-Data-
 
+## Introduction 
+
+With the rise in popularity of machine learning for natural language processing (NLP) tasks, there is an intrinsic demand for large-scale social-media datasets aimed at such tasks in the field of pharmacovigilance, specifically for the identification of Adverse Drug Reactions (ADRs)
+
+Adverse drug events (ADEs), which include drug interactions, have a huge impact on patient health and cost a lot of money.
+
+ Each Adverse Event (AE) linked with a drug based on data from the Safety Reporting System is published on the drug label and serves as the basis for training and testing machine learning algorithms.
+
+Unknown ADR refers to an AE that has been identified and may be linked to the drug.
+![image](https://user-images.githubusercontent.com/60420184/146589317-fa43ccf4-16d5-4ca8-8f8c-b9a6c2075c3c.png)
+
+
+## Dataset
+
+We will be using Twitter data by extracting tweets for 2021 and 2020 - https://developer.twitter.com/en
+
+A known list of Known ADR will be used from US FDA website. - https://open.fda.gov/data/downloads/
+
 ## Methodology
+
 ### Tweets Extraction
 ### Data Scrubbing:
 Removing links, user names,emojis,#tags,numbers etc
