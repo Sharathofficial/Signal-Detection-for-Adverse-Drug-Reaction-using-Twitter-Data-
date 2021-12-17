@@ -9,8 +9,6 @@ Adverse drug events (ADEs), which include drug interactions, have a huge impact 
  Each Adverse Event (AE) linked with a drug based on data from the Safety Reporting System is published on the drug label and serves as the basis for training and testing machine learning algorithms.
 
 Unknown ADR refers to an AE that has been identified and may be linked to the drug.
-![image](https://user-images.githubusercontent.com/60420184/146589317-fa43ccf4-16d5-4ca8-8f8c-b9a6c2075c3c.png)
-
 
 ## Dataset
 
